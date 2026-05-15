@@ -11,6 +11,7 @@ Resumen de acciones realizadas durante la sesión:
 - Marcada la tarea "Revisar intervalos de consulta" como completada en la lista de TODO interna.
 - Actualizada la base a Node 24.15 en `server/package.json`, Dockerfiles, documentación y workflows de CI.
 - Creado el flujo local multiarch para `server` y `dist-mono`, con `docker compose` validado en ARM.
+- Añadido `apt-get upgrade -y` en los Dockerfiles de servidor para mantener las capas base al día al construir imágenes.
 
 Archivos modificados (resumen):
 
@@ -32,6 +33,6 @@ Tareas (estado)
 - [x] Revisar intervalos de consulta — validación y UI actualizadas (1s,2s,5s,10s).
 - [x] Actualizar Node a LTS — completado (Node 24.15 en `server/package.json`, Dockerfiles y workflows).
 - [x] Probar despliegue local multiarch — completado (stack `server` y `dist-mono` validado en ARM).
-- [ ] Actualizar dependencias base — pendiente.
+- [x] Actualizar dependencias base — completado (actualización de paquetes base en Dockerfiles de servidor).
 - [ ] Revisiones de linter — pendiente.
 - [x] Registrar acciones en `todo.md` — completado (este fichero).

@@ -12,7 +12,7 @@ COPY ./client .
 
 RUN npm run build
 
-FROM nginx:1.27.1-alpine
+FROM nginx:stable-alpine3.23-slim
 
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY --from=build /app/env.sh /docker-entrypoint.d/env.sh

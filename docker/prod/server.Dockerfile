@@ -1,7 +1,8 @@
-FROM node:24.15-slim
+FROM node:24-trixie-slim
 
 # Install ping
 RUN apt-get update \
+    && apt-get upgrade -y \
     && apt-get install -y iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 

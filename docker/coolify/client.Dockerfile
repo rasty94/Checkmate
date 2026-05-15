@@ -1,4 +1,4 @@
-FROM node:24.15-slim AS build
+FROM node:24-trixie-slim AS build
 
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 
@@ -12,7 +12,7 @@ COPY ./client .
 
 RUN npm run build
 
-FROM nginx:1.27.1-alpine
+FROM nginx:stable-alpine3.23-slim
 
 COPY ./server/docker/dist/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/dist /usr/share/nginx/html

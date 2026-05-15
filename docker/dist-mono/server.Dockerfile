@@ -1,4 +1,4 @@
-FROM node:24.15-slim AS frontend-build
+FROM node:24-trixie-slim AS frontend-build
 
 WORKDIR /app/client
 
@@ -8,10 +8,11 @@ RUN npm install
 COPY client ./
 RUN npm run build
 
-FROM node:24.15-slim AS app
+FROM node:24-trixie-slim AS app
 
 # Install ping
 RUN apt-get update \
+    && apt-get upgrade -y \
     && apt-get install -y iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
