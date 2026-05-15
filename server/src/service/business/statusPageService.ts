@@ -21,6 +21,8 @@ export class StatusPageService implements IStatusPageService {
 
 	private withoutThemeFields = (data: Partial<StatusPage>): Partial<StatusPage> => {
 		const { theme: _theme, themeMode: _themeMode, ...rest } = data;
+		void _theme;
+		void _themeMode;
 		return rest;
 	};
 
