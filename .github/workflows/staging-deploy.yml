@@ -17,8 +17,8 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.CR_USERNAME || github.actor }}
+          password: ${{ secrets.CR_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Get version
         id: vars
@@ -26,14 +26,14 @@ jobs:
       - name: Build Client Docker image
         run: |
           docker build \
-            -t ghcr.io/bluewave-labs/checkmate:frontend-staging \
+            -t ghcr.io/${{ github.repository_owner }}/checkmate:frontend-staging \
             -f ./docker/staging/client.Dockerfile \
             --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
             --build-arg VITE_APP_VERSION=${{ env.VERSION }} \
             .
 
       - name: Push Client Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate:frontend-staging
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:frontend-staging
 
   docker-build-and-push-server:
     needs: docker-build-and-push-client
@@ -46,30 +46,30 @@ jobs:
         uses: docker/login-action@v3
         with:
           registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.CR_USERNAME || github.actor }}
+          password: ${{ secrets.CR_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Build Server Docker image
         run: |
           docker build \
-            -t ghcr.io/bluewave-labs/checkmate:backend-staging \
+            -t ghcr.io/${{ github.repository_owner }}/checkmate:backend-staging \
             -f ./docker/staging/server.Dockerfile \
-            --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
+            --label org.opencontainers.image.source=https://github.com/${{ github.repository }} \
             .
 
       - name: Push Server Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate:backend-staging
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:backend-staging
 
       - name: Build Mongo Docker image
         run: |
           docker build \
-            -t ghcr.io/bluewave-labs/checkmate:mongo-staging \
+            -t ghcr.io/${{ github.repository_owner }}/checkmate:mongo-staging \
             -f ./docker/staging/mongoDB.Dockerfile \
-            --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
+            --label org.opencontainers.image.source=https://github.com/${{ github.repository }} \
             .
 
       - name: Push MongoDB Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate:mongo-staging
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:mongo-staging
 
   deploy-to-staging:
     needs: docker-build-and-push-server

@@ -1,6 +1,6 @@
 services:
   server:
-    image: ghcr.io/bluewave-labs/checkmate-backend-mono-multiarch:latest
+    image: ghcr.io/rasty94/checkmate-backend-mono-multiarch:latest
     restart: always
     pull_policy: always
     ports:

@@ -1,6 +1,6 @@
 services:
   server:
-    image: ghcr.io/bluewave-labs/checkmate-backend-mono:latest
+    image: ghcr.io/rasty94/checkmate-backend-mono:latest
     pull_policy: always
     restart: always
     ports:
@@ -14,7 +14,7 @@ services:
     depends_on:
       - mongodb
   mongodb:
-    image: ghcr.io/bluewave-labs/checkmate-mongo:latest
+    image: ghcr.io/rasty94/checkmate-mongo:latest
     restart: always
     command: ["mongod", "--quiet", "--bind_ip_all"]
     volumes:

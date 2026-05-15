@@ -26,14 +26,14 @@ jobs:
       - name: Build Client Docker image
         run: |
           docker build \
-            -t ghcr.io/bluewave-labs/checkmate:frontend-demo \
+            -t ghcr.io/${{ github.repository_owner }}/checkmate:frontend-demo \
             -f ./docker/prod/client.Dockerfile \
             --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
             --build-arg VITE_APP_VERSION=${{ env.VERSION }} \
             .
 
       - name: Push Client Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate:frontend-demo
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:frontend-demo
 
   docker-build-and-push-server:
     needs: docker-build-and-push-client
@@ -52,24 +52,24 @@ jobs:
       - name: Build Server Docker image
         run: |
           docker build \
-            -t ghcr.io/bluewave-labs/checkmate:backend-demo \
+            -t ghcr.io/${{ github.repository_owner }}/checkmate:backend-demo \
             -f ./docker/prod/server.Dockerfile \
             --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
             .
 
       - name: Push Server Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate:backend-demo
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:backend-demo
 
       - name: Build Mongo Docker image
         run: |
           docker build \
-            -t ghcr.io/bluewave-labs/checkmate:mongo-demo \
+            -t ghcr.io/${{ github.repository_owner }}/checkmate:mongo-demo \
             -f ./docker/prod/mongoDB.Dockerfile \
             --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
             .
 
       - name: Push MongoDB Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate:mongo-demo
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:mongo-demo
 
   deploy-to-demo:
     needs: docker-build-and-push-server

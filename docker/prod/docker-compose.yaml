@@ -1,6 +1,6 @@
 services:
   client:
-    image: ghcr.io/bluewave-labs/checkmate:frontend-demo
+    image: ghcr.io/rasty94/checkmate:frontend-demo
     restart: always
     environment:
       UPTIME_APP_API_BASE_URL: "https://demo.checkmate.so/api/v1"
@@ -15,7 +15,7 @@ services:
       - /etc/letsencrypt:/etc/nginx/ssl:ro
 
   server:
-    image: ghcr.io/bluewave-labs/checkmate:backend-demo
+    image: ghcr.io/rasty94/checkmate:backend-demo
     restart: always
     ports:
       - "52345:52345"
@@ -26,7 +26,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
   mongodb:
-    image: ghcr.io/bluewave-labs/checkmate:mongo-demo
+    image: ghcr.io/rasty94/checkmate:mongo-demo
     restart: always
     command: ["mongod", "--quiet", "--bind_ip_all"]
     volumes:
@@ -41,7 +41,7 @@ services:
       start_interval: 1s
       retries: 30
   capture:
-    image: ghcr.io/bluewave-labs/capture:latest
+    image: ghcr.io/rasty94/capture:latest
     container_name: capture
     restart: unless-stopped
     ports:

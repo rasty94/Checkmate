@@ -1,8 +1,5 @@
-# sudo certbot certonly --standalone --http-01-port 8080
-# cerbot needs to run on 8080 since port 80 is used by the gateway
-
+version: '3.8'
 services:
-  # Gateway (Single Entry Point)
   gateway:
     image: nginx:1.27.1-alpine
     container_name: checkmate-gateway
@@ -14,9 +11,8 @@ services:
       - /etc/letsencrypt:/etc/nginx/ssl:ro
       - ./gateway/nginx.conf:/etc/nginx/conf.d/default.conf:ro
 
-  # Production Stack ----- 
   client-prod:
-    image: ghcr.io/bluewave-labs/checkmate:frontend-demo
+    image: ghcr.io/rasty94/checkmate:frontend-demo
     container_name: client-prod
     restart: always
     environment:
@@ -30,7 +26,7 @@ services:
       - ./nginx/conf.d/prod.conf:/etc/nginx/conf.d/default.conf:ro
 
   server-prod:
-    image: ghcr.io/bluewave-labs/checkmate:backend-demo
+    image: ghcr.io/rasty94/checkmate:backend-demo
     container_name: server-prod
     restart: always
     env_file:
@@ -41,8 +37,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   mongodb-prod:
-    image: ghcr.io/bluewave-labs/checkmate:mongo-demo
-    container_name: mongodb-prod
+    image: ghcr.io/rasty94/checkmate:mongo-demo
     restart: always
     command: [ "mongod", "--quiet", "--bind_ip_all" ]
     volumes:
@@ -57,9 +52,8 @@ services:
       start_interval: 1s
       retries: 30
 
-  # Staging Stack -----
   client-staging:
-    image: ghcr.io/bluewave-labs/checkmate:frontend-staging
+    image: ghcr.io/rasty94/checkmate:frontend-staging
     container_name: client-staging
     restart: always
     environment:
@@ -73,7 +67,7 @@ services:
       - ./nginx/conf.d/staging.conf:/etc/nginx/conf.d/default.conf:ro
 
   server-staging:
-    image: ghcr.io/bluewave-labs/checkmate:backend-staging
+    image: ghcr.io/rasty94/checkmate:backend-staging
     container_name: server-staging
     restart: always
     env_file:
@@ -84,7 +78,7 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
   mongodb-staging:
-    image: ghcr.io/bluewave-labs/checkmate:mongo-staging
+    image: ghcr.io/rasty94/checkmate:mongo-staging
     container_name: mongodb-staging
     restart: always
     command: [ "mongod", "--quiet", "--bind_ip_all" ]
@@ -100,9 +94,8 @@ services:
       start_interval: 1s
       retries: 30
 
-  # Shared Utils
   capture:
-    image: ghcr.io/bluewave-labs/capture:latest
+    image: ghcr.io/rasty94/capture:latest
     container_name: capture
     restart: unless-stopped
     ports:

@@ -1,5 +1,5 @@
 client:
-  image: ghcr.io/bluewave-labs/checkmate-client:v3.2.0
+  image: ghcr.io/rasty94/checkmate-client:v3.2.0
   port: 80
   protocol: http
   ingress:
@@ -18,7 +18,7 @@ client:
       # The secret will be automatically created by cert-manager when using the cert-manager.io/cluster-issuer annotation
 
 server:
-  image: ghcr.io/bluewave-labs/checkmate-backend:v3.2.0
+  image: ghcr.io/rasty94/checkmate-backend:v3.2.0
   port: 52345
   protocol: http
   ingress:
@@ -42,7 +42,7 @@ redis:
   port: 6379
 
 mongodb:
-  image: ghcr.io/bluewave-labs/checkmate-mongo:v3.2.0
+  image: ghcr.io/rasty94/checkmate-mongo:v3.2.0
   port: 27017
 
 secrets:

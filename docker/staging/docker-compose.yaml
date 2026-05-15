@@ -1,6 +1,6 @@
 services:
   client:
-    image: ghcr.io/bluewave-labs/checkmate:frontend-staging
+    image: ghcr.io/rasty94/checkmate:frontend-staging
     restart: always
     environment:
       UPTIME_APP_API_BASE_URL: "https://checkmate-test.bluewavelabs.ca/api/v1"
@@ -24,7 +24,7 @@ services:
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot; sleep 12h & wait $${!}; done;'"
 
   server:
-    image: ghcr.io/bluewave-labs/checkmate:backend-staging
+    image: ghcr.io/rasty94/checkmate:backend-staging
     restart: always
     ports:
       - "52345:52345"
@@ -33,7 +33,7 @@ services:
     depends_on:
       - mongodb
   mongodb:
-    image: ghcr.io/bluewave-labs/checkmate:mongo-staging
+    image: ghcr.io/rasty94/checkmate:mongo-staging
     restart: always
     command: ["mongod", "--quiet", "--bind_ip_all"]
     ports:
@@ -50,7 +50,7 @@ services:
       start_interval: 1s
       retries: 30
   capture:
-    image: ghcr.io/bluewave-labs/capture:latest
+    image: ghcr.io/rasty94/capture:latest
     container_name: capture
     restart: unless-stopped
     ports:

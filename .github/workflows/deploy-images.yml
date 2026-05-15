@@ -34,7 +34,7 @@ jobs:
 
       - name: Push Client Docker image
         run: |
-          docker push ghcr.io/bluewave-labs/checkmate-client:latest
+          docker push ghcr.io/${{ github.repository_owner }}/checkmate-client:latest
 
   docker-build-and-push-server:
     needs: docker-build-and-push-client
@@ -60,7 +60,7 @@ jobs:
 
       - name: Push Server Docker image
         run: |
-          docker push ghcr.io/bluewave-labs/checkmate-backend:latest
+          docker push ghcr.io/${{ github.repository_owner }}/checkmate-backend:latest
 
       - name: Build Mongo Docker image
         run: |
@@ -72,7 +72,7 @@ jobs:
 
       - name: Push MongoDB Docker image
         run: |
-          docker push ghcr.io/bluewave-labs/checkmate-mongo:latest
+          docker push ghcr.io/${{ github.repository_owner }}/checkmate-mongo:latest
 
   docker-build-and-push-server-mono-multiarch:
     runs-on: ubuntu-latest
@@ -135,9 +135,9 @@ jobs:
           docker build \
             -t ghcr.io/${{ github.repository_owner }}/checkmate-backend-mono:latest \
             -f ./docker/dist-mono/server.Dockerfile \
-            --label org.opencontainers.image.source=https://github.com/bluewave-labs/checkmate \
+            --label org.opencontainers.image.source=https://github.com/${{ github.repository }} \
             --build-arg VITE_APP_VERSION=${{ env.VERSION }} \
             .
 
       - name: Push Server Docker image
-        run: docker push ghcr.io/bluewave-labs/checkmate-backend-mono:latest
+        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate-backend-mono:latest

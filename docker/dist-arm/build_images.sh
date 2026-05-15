@@ -20,7 +20,7 @@ dockerfiles=(
 )
 
 # Static image name for GitHub Container Registry (GHCR)
-image="ghcr.io/bluewave-labs/checkmate:backend-dist-multi-arch"
+image="ghcr.io/rasty94/checkmate:backend-dist-multi-arch"
 platforms="linux/amd64,linux/arm64"
 repo_url="https://github.com/bluewave-labs/checkmate"
 
