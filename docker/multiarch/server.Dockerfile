@@ -15,7 +15,7 @@ WORKDIR /app
 # Install runtime deps (ping)
 RUN apt-get update \
     && apt-get upgrade -y \
-    && apt-get install -y iputils-ping \
+    && apt-get install -y --no-install-recommends iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
 # Copy built app and production deps

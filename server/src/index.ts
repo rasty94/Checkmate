@@ -61,7 +61,7 @@ startApp().catch((error) => {
 		});
 	} else {
 		// Fallback when logger is not available (e.g. initialization failed)
-		// eslint-disable-next-line no-console
+		 
 		console.error("startApp error:", error);
 	}
 	process.exit(1);
