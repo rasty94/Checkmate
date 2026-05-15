@@ -1,20 +1,16 @@
 services:
   server:
     platform: linux/arm64
-    image: checkmate/dist-mono/server:local-arm64
+    image: checkmate/server:local-arm64
     restart: always
     ports:
       - "52345:52345"
-    environment:
-      - UPTIME_APP_API_BASE_URL=http://localhost:52345/api/v1
-      - UPTIME_APP_CLIENT_HOST=http://localhost
-      - DB_CONNECTION_STRING=mongodb://mongodb:27017/uptime_db
-      - CLIENT_HOST=http://localhost
-      - JWT_SECRET=my_secret
+    env_file:
+      - ../../server/.env
     depends_on:
       - mongodb
+
   mongodb:
-    platform: linux/arm64
     image: mongo:6.0
     restart: always
     command: ["mongod", "--quiet", "--bind_ip_all"]
@@ -25,5 +21,11 @@ services:
       interval: 5s
       timeout: 30s
       start_period: 0s
-      start_interval: 1s
       retries: 30
+
+  # client: omitted for local server testing. Run the frontend separately with Vite
+  # If you want to run the client in Docker, uncomment and build `uptime_client` or
+  # replace the image with a published client image.
+
+volumes:
+  mongo_data: {}

@@ -5,6 +5,7 @@ import helmet from "helmet";
 import compression from "compression";
 import cookieParser from "cookie-parser";
 import swaggerUi, { type JsonObject } from "swagger-ui-express";
+import fs from "fs";
 import { handleErrors } from "@/middleware/handleErrors.js";
 import { generalApiLimiter } from "@/middleware/rateLimiter.js";
 import { sanitizeBody, sanitizeQuery } from "@/middleware/sanitization.js";
@@ -102,7 +103,13 @@ export const createApp = ({
 
 	// FE routes
 	app.get("*", (req, res) => {
-		res.sendFile(path.join(frontendPath, "index.html"));
+		const indexHtmlPath = path.join(frontendPath, "index.html");
+		if (fs.existsSync(indexHtmlPath)) {
+			res.sendFile(indexHtmlPath);
+			return;
+		}
+
+		res.status(200).send("Checkmate server is running");
 	});
 	app.use(handleErrors);
 	return app;

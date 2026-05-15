@@ -1,4 +1,4 @@
-FROM node:20-slim
+FROM node:24.15-slim
 
 # Install ping
 RUN apt-get update \

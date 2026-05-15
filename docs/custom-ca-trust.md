@@ -55,7 +55,7 @@ For more comprehensive trust configuration, you can create a derived Dockerfile 
 Create `docker/dev/server-custom-ca.Dockerfile`:
 
 ```dockerfile
-FROM node:20-alpine
+FROM node:24.15-alpine
 
 # Install ca-certificates for Alpine
 RUN apk add --no-cache ca-certificates

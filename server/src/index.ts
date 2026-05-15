@@ -52,11 +52,17 @@ const startApp = async () => {
 };
 
 startApp().catch((error) => {
-	logger.error({
-		message: error.message,
-		service: SERVICE_NAME,
-		method: "startApp",
-		stack: error.stack,
-	});
+	if (logger && typeof logger.error === "function") {
+		logger.error({
+			message: error.message,
+			service: SERVICE_NAME,
+			method: "startApp",
+			stack: error.stack,
+		});
+	} else {
+		// Fallback when logger is not available (e.g. initialization failed)
+		// eslint-disable-next-line no-console
+		console.error("startApp error:", error);
+	}
 	process.exit(1);
 });

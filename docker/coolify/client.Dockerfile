@@ -1,4 +1,4 @@
-FROM node:20-slim AS build
+FROM node:24.15-slim AS build
 
 ENV NODE_OPTIONS="--max-old-space-size=4096"
 
