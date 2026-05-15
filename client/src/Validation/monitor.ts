@@ -12,7 +12,7 @@ const baseSchema = z.object({
 		.min(1, "Monitor name is required")
 		.max(50, "Monitor name must be at most 50 characters"),
 	description: z.string().optional(),
-	interval: z.number().min(15000, "Interval must be at least 15 seconds"),
+	interval: z.number().min(1000, "Interval must be at least 1 second"),
 	notifications: z.array(z.string()),
 	statusWindowSize: z
 		.number({ message: "Status window size is required" })

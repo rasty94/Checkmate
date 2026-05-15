@@ -676,6 +676,10 @@ const CreateMonitorPage = () => {
 								)}
 								error={!!fieldState.error}
 							>
+								<MenuItem value={1000}>{t("pages.createMonitor.form.frequency.option.frequency.value.oneSecond")}</MenuItem>
+								<MenuItem value={2000}>{t("pages.createMonitor.form.frequency.option.frequency.value.twoSeconds")}</MenuItem>
+								<MenuItem value={5000}>{t("pages.createMonitor.form.frequency.option.frequency.value.fiveSeconds")}</MenuItem>
+								<MenuItem value={10000}>{t("pages.createMonitor.form.frequency.option.frequency.value.tenSeconds")}</MenuItem>
 								<MenuItem value={15000}>
 									{t(
 										"pages.createMonitor.form.frequency.option.frequency.value.fifteenSeconds"

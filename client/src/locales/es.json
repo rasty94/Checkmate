@@ -503,16 +503,20 @@
 						"frequency": {
 							"label": "Frecuencia de verificación",
 							"value": {
-								"fifteenMinutes": "15 minutos",
+								"oneSecond": "1 segundo",
+								"twoSeconds": "2 segundos",
+								"fiveSeconds": "5 segundos",
+								"tenSeconds": "10 segundos",
 								"fifteenSeconds": "15 segundos",
-								"fiveMinutes": "5 minutos",
-								"fourMinutes": "4 minutos",
-								"oneMinute": "1 minuto",
-								"tenMinutes": "10 minutos",
-								"thirtyMinutes": "30 minutos",
 								"thirtySeconds": "30 segundos",
+								"oneMinute": "1 minuto",
+								"twoMinutes": "2 minutos",
 								"threeMinutes": "3 minutos",
-								"twoMinutes": "2 minutos"
+								"fourMinutes": "4 minutos",
+								"fiveMinutes": "5 minutos",
+								"tenMinutes": "10 minutos",
+								"fifteenMinutes": "15 minutos",
+								"thirtyMinutes": "30 minutos"
 							}
 						}
 					},

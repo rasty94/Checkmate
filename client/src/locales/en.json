@@ -510,16 +510,20 @@
 						"frequency": {
 							"label": "Check frequency",
 							"value": {
-								"fifteenMinutes": "15 minutes",
+								"oneSecond": "1 second",
+								"twoSeconds": "2 seconds",
+								"fiveSeconds": "5 seconds",
+								"tenSeconds": "10 seconds",
 								"fifteenSeconds": "15 seconds",
-								"fiveMinutes": "5 minutes",
-								"fourMinutes": "4 minutes",
-								"oneMinute": "1 minute",
-								"tenMinutes": "10 minutes",
-								"thirtyMinutes": "30 minutes",
 								"thirtySeconds": "30 seconds",
+								"oneMinute": "1 minute",
+								"twoMinutes": "2 minutes",
 								"threeMinutes": "3 minutes",
-								"twoMinutes": "2 minutes"
+								"fourMinutes": "4 minutes",
+								"fiveMinutes": "5 minutes",
+								"tenMinutes": "10 minutes",
+								"fifteenMinutes": "15 minutes",
+								"thirtyMinutes": "30 minutes"
 							}
 						}
 					},
