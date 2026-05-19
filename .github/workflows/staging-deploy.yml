@@ -64,16 +64,7 @@ jobs:
       - name: Push Server Docker image
         run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:backend-staging
 
-      - name: Build Mongo Docker image
-        run: |
-          docker build \
-            -t ghcr.io/${{ github.repository_owner }}/checkmate:mongo-staging \
-            -f ./docker/staging/mongoDB.Dockerfile \
-            --label org.opencontainers.image.source=https://github.com/${{ github.repository }} \
-            .
-
-      - name: Push MongoDB Docker image
-        run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:mongo-staging
+      # Removed: build/push custom MongoDB image (use upstream image instead)
 
   deploy-to-staging:
     needs: docker-build-and-push-server
