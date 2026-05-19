@@ -1,5 +1,9 @@
 name: Deploy images
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   push:
     branches: ["master"]

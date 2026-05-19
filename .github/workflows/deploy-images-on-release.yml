@@ -1,5 +1,9 @@
 name: Deploy images on release
 
+permissions:
+  contents: read
+  packages: write
+
 on:
   push:
     tags:

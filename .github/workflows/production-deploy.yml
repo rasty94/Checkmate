@@ -33,6 +33,9 @@ jobs:
             .
 
       - name: Push Client Docker image
+            permissions:
+              contents: read
+              packages: write
         run: docker push ghcr.io/${{ github.repository_owner }}/checkmate:frontend-demo
 
   docker-build-and-push-server:
