@@ -1,0 +1,275 @@
+{
+  "@mui/lab": {
+    "current": "7.0.0",
+    "wanted": "7.0.0",
+    "latest": "9.0.0-beta.3",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@mui/lab"
+  },
+  "@mui/material": {
+    "current": "7.3.7",
+    "wanted": "7.3.7",
+    "latest": "9.0.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@mui/material"
+  },
+  "@mui/x-charts": {
+    "current": "7.29.1",
+    "wanted": "7.29.1",
+    "latest": "9.2.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@mui/x-charts"
+  },
+  "@mui/x-date-pickers": {
+    "current": "7.29.4",
+    "wanted": "7.29.4",
+    "latest": "9.2.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@mui/x-date-pickers"
+  },
+  "@reduxjs/toolkit": {
+    "current": "2.7.0",
+    "wanted": "2.7.0",
+    "latest": "2.12.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@reduxjs/toolkit"
+  },
+  "@types/node": {
+    "current": "24.5.2",
+    "wanted": "24.5.2",
+    "latest": "25.9.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@types/node"
+  },
+  "@types/react": {
+    "current": "18.3.27",
+    "wanted": "18.3.29",
+    "latest": "19.2.15",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@types/react"
+  },
+  "@types/react-dom": {
+    "current": "18.3.7",
+    "wanted": "18.3.7",
+    "latest": "19.2.3",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@types/react-dom"
+  },
+  "@typescript-eslint/eslint-plugin": {
+    "current": "7.18.0",
+    "wanted": "7.18.0",
+    "latest": "8.59.4",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@typescript-eslint/eslint-plugin"
+  },
+  "@typescript-eslint/parser": {
+    "current": "7.18.0",
+    "wanted": "7.18.0",
+    "latest": "8.59.4",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@typescript-eslint/parser"
+  },
+  "@vitejs/plugin-react": {
+    "current": "4.7.0",
+    "wanted": "4.7.0",
+    "latest": "6.0.2",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/@vitejs/plugin-react"
+  },
+  "axios": {
+    "current": "1.15.2",
+    "wanted": "1.16.1",
+    "latest": "1.16.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/axios"
+  },
+  "dayjs": {
+    "current": "1.11.13",
+    "wanted": "1.11.13",
+    "latest": "1.11.20",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/dayjs"
+  },
+  "eslint": {
+    "current": "8.57.1",
+    "wanted": "8.57.1",
+    "latest": "10.4.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/eslint"
+  },
+  "eslint-plugin-react-hooks": {
+    "current": "5.2.0",
+    "wanted": "5.2.0",
+    "latest": "7.1.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/eslint-plugin-react-hooks"
+  },
+  "eslint-plugin-react-refresh": {
+    "current": "0.4.26",
+    "wanted": "0.4.26",
+    "latest": "0.5.2",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/eslint-plugin-react-refresh"
+  },
+  "i18next": {
+    "current": "25.4.2",
+    "wanted": "25.4.2",
+    "latest": "26.2.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/i18next"
+  },
+  "joi": {
+    "current": "17.13.3",
+    "wanted": "17.13.3",
+    "latest": "18.2.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/joi"
+  },
+  "lint-staged": {
+    "current": "16.2.7",
+    "wanted": "16.4.0",
+    "latest": "17.0.5",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/lint-staged"
+  },
+  "lucide-react": {
+    "current": "0.562.0",
+    "wanted": "0.562.0",
+    "latest": "1.16.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/lucide-react"
+  },
+  "maplibre-gl": {
+    "current": "5.19.0",
+    "wanted": "5.24.0",
+    "latest": "5.24.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/maplibre-gl"
+  },
+  "mui-color-input": {
+    "current": "7.0.0",
+    "wanted": "7.0.0",
+    "latest": "9.0.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/mui-color-input"
+  },
+  "prettier": {
+    "current": "3.8.1",
+    "wanted": "3.8.3",
+    "latest": "3.8.3",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/prettier"
+  },
+  "react": {
+    "current": "18.3.1",
+    "wanted": "18.3.1",
+    "latest": "19.2.6",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react"
+  },
+  "react-dom": {
+    "current": "18.3.1",
+    "wanted": "18.3.1",
+    "latest": "19.2.6",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-dom"
+  },
+  "react-hook-form": {
+    "current": "7.71.1",
+    "wanted": "7.76.0",
+    "latest": "7.76.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-hook-form"
+  },
+  "react-i18next": {
+    "current": "15.7.4",
+    "wanted": "15.7.4",
+    "latest": "17.0.8",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-i18next"
+  },
+  "react-icons": {
+    "current": "5.5.0",
+    "wanted": "5.5.0",
+    "latest": "5.6.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-icons"
+  },
+  "react-map-gl": {
+    "current": "8.1.0",
+    "wanted": "8.1.1",
+    "latest": "8.1.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-map-gl"
+  },
+  "react-redux": {
+    "current": "9.2.0",
+    "wanted": "9.2.0",
+    "latest": "9.3.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-redux"
+  },
+  "react-router": {
+    "current": "6.30.3",
+    "wanted": "6.30.3",
+    "latest": "7.15.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-router"
+  },
+  "react-router-dom": {
+    "current": "6.30.3",
+    "wanted": "6.30.3",
+    "latest": "7.15.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-router-dom"
+  },
+  "react-toastify": {
+    "current": "10.0.6",
+    "wanted": "10.0.6",
+    "latest": "11.1.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/react-toastify"
+  },
+  "recharts": {
+    "current": "2.15.2",
+    "wanted": "2.15.2",
+    "latest": "3.8.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/recharts"
+  },
+  "swr": {
+    "current": "2.3.8",
+    "wanted": "2.4.1",
+    "latest": "2.4.1",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/swr"
+  },
+  "typescript": {
+    "current": "5.9.3",
+    "wanted": "5.9.3",
+    "latest": "6.0.3",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/typescript"
+  },
+  "vite": {
+    "current": "6.4.2",
+    "wanted": "6.4.2",
+    "latest": "8.0.13",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/vite"
+  },
+  "vite-plugin-svgr": {
+    "current": "4.5.0",
+    "wanted": "4.5.0",
+    "latest": "5.2.0",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/vite-plugin-svgr"
+  },
+  "zod": {
+    "current": "4.3.6",
+    "wanted": "4.4.3",
+    "latest": "4.4.3",
+    "dependent": "client",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/client/node_modules/zod"
+  }
+}

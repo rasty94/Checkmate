@@ -36,3 +36,38 @@ Tareas (estado)
 - [x] Actualizar dependencias base — completado (actualización de paquetes base en Dockerfiles de servidor).
 - [ ] Revisiones de linter — pendiente.
 - [x] Registrar acciones en `todo.md` — completado (este fichero).
+
+Propuestas de mejoras (priorizadas)
+
+- **Alta — Seguridad y mantenimiento:**
+	- [ ] Activar Dependabot o Renovate para actualizaciones automáticas de dependencias.
+	- [ ] Ejecutar `npm audit` en `server` y `client` y corregir vulnerabilidades críticas (ej. actualizar `multer` a 2.x si es necesario).
+	- [ ] Añadir paso SCA (Snyk / GitHub Advanced Security) al CI para bloquear PRs con vulnerabilidades graves.
+
+- **Alta — Estabilidad del entorno:**
+	- [ ] Revisar y documentar la política de versiones de Node (actualmente `node >=24.15.0` en `server/package.json`).
+	- [ ] Asegurar uso de lockfiles y `npm ci` en CI para reproducibilidad.
+
+- **Media — Calidad y CI:**
+	- [ ] Añadir verificación de cobertura mínima de tests en CI y fallar builds por cobertura insuficiente.
+	- [ ] Activar `husky` + `lint-staged` para formateo y lint local (pre-commit).
+	- [ ] Añadir escaneo de secretos en PRs (GitHub action que detecte secretos accidentalmente incluidos).
+
+- **Media/Baja — Experiencia de desarrollo y mantenimiento:**
+	- [ ] Añadir `README.md` para desarrollo local con pasos `npm install`, `npm run dev` (client + server), y versiones requeridas.
+	- [ ] Añadir `CODEOWNERS` y plantillas de PR/Issue para facilitar revisiones.
+	- [ ] Revisar y optimizar Dockerfiles (usar multi-stage, reducir tamaño de imágenes, asegurar actualizaciones periódicas).
+
+Pasos sugeridos inmediatos
+
+- Ejecutar `npm audit` y `npm outdated` en `server` y `client` para priorizar actualizaciones.
+- Crear una configuración inicial de Dependabot (`.github/dependabot.yml`).
+- Añadir una job en CI que ejecute `npm audit --audit-level=high`.
+
+Estados propuestos (para seguir en este fichero)
+
+- [ ] Ejecutar `npm audit` (server)
+- [ ] Ejecutar `npm audit` (client)
+- [ ] Añadir Dependabot
+- [ ] Añadir SCA en CI
+- [ ] Documentar versión Node y setup de desarrollo
