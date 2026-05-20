@@ -14,6 +14,7 @@ const baseSchema = z.object({
 	description: z.string().optional(),
 	interval: z.number().min(1000, "Interval must be at least 1 second"),
 	notifications: z.array(z.string()),
+	tags: z.array(z.string()),
 	statusWindowSize: z
 		.number({ message: "Status window size is required" })
 		.min(1, "Status window size must be at least 1")
