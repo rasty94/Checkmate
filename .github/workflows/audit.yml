@@ -1,0 +1,28 @@
+name: Dependency audit
+
+on:
+  push:
+    branches: [ develop, main ]
+  pull_request:
+    branches: [ develop, main ]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        project: ["server","client"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install dependencies
+        working-directory: ${{ matrix.project }}
+        run: |
+          npm ci
+      - name: Run npm audit
+        working-directory: ${{ matrix.project }}
+        run: |
+          npm audit --audit-level=high || true

@@ -1,0 +1,310 @@
+{
+  "@eslint/js": {
+    "current": "9.38.0",
+    "wanted": "9.39.4",
+    "latest": "10.0.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@eslint/js"
+  },
+  "@grpc/grpc-js": {
+    "current": "1.14.3",
+    "wanted": "1.14.4",
+    "latest": "1.14.4",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@grpc/grpc-js"
+  },
+  "@grpc/proto-loader": {
+    "current": "0.8.0",
+    "wanted": "0.8.1",
+    "latest": "0.8.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@grpc/proto-loader"
+  },
+  "@types/dockerode": {
+    "current": "4.0.0",
+    "wanted": "4.0.1",
+    "latest": "4.0.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@types/dockerode"
+  },
+  "@types/express": {
+    "current": "5.0.3",
+    "wanted": "5.0.3",
+    "latest": "5.0.6",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@types/express"
+  },
+  "@types/jsdom": {
+    "current": "27.0.0",
+    "wanted": "27.0.0",
+    "latest": "28.0.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@types/jsdom"
+  },
+  "@types/mjml": {
+    "current": "4.7.4",
+    "wanted": "4.7.4",
+    "latest": "5.0.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@types/mjml"
+  },
+  "@types/multer": {
+    "current": "2.0.0",
+    "wanted": "2.1.0",
+    "latest": "2.1.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@types/multer"
+  },
+  "@types/nodemailer": {
+    "current": "7.0.1",
+    "wanted": "7.0.1",
+    "latest": "8.0.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/@types/nodemailer"
+  },
+  "axios": {
+    "current": "1.15.2",
+    "wanted": "1.16.1",
+    "latest": "1.16.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/axios"
+  },
+  "bcryptjs": {
+    "current": "3.0.2",
+    "wanted": "3.0.2",
+    "latest": "3.0.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/bcryptjs"
+  },
+  "cors": {
+    "current": "2.8.5",
+    "wanted": "2.8.6",
+    "latest": "2.8.6",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/cors"
+  },
+  "dockerode": {
+    "current": "4.0.6",
+    "wanted": "4.0.6",
+    "latest": "5.0.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/dockerode"
+  },
+  "dotenv": {
+    "current": "16.6.1",
+    "wanted": "16.6.1",
+    "latest": "17.4.2",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/dotenv"
+  },
+  "eslint": {
+    "current": "9.38.0",
+    "wanted": "9.39.4",
+    "latest": "10.4.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/eslint"
+  },
+  "eslint-plugin-mocha": {
+    "current": "10.5.0",
+    "wanted": "10.5.0",
+    "latest": "11.3.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/eslint-plugin-mocha"
+  },
+  "express": {
+    "current": "4.22.1",
+    "wanted": "4.22.2",
+    "latest": "5.2.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/express"
+  },
+  "express-rate-limit": {
+    "current": "8.5.1",
+    "wanted": "8.5.2",
+    "latest": "8.5.2",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/express-rate-limit"
+  },
+  "gamedig": {
+    "current": "5.2.0",
+    "wanted": "5.2.0",
+    "latest": "5.3.2",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/gamedig"
+  },
+  "globals": {
+    "current": "15.15.0",
+    "wanted": "15.15.0",
+    "latest": "17.6.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/globals"
+  },
+  "got": {
+    "current": "14.4.7",
+    "wanted": "14.4.7",
+    "latest": "15.0.5",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/got"
+  },
+  "ioredis": {
+    "current": "5.8.2",
+    "wanted": "5.10.1",
+    "latest": "5.10.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/ioredis"
+  },
+  "isomorphic-dompurify": {
+    "current": "2.30.1",
+    "wanted": "2.36.0",
+    "latest": "3.14.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/isomorphic-dompurify"
+  },
+  "jest": {
+    "current": "30.2.0",
+    "wanted": "30.4.2",
+    "latest": "30.4.2",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/jest"
+  },
+  "jsdom": {
+    "current": "26.1.0",
+    "wanted": "26.1.0",
+    "latest": "29.1.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/jsdom"
+  },
+  "jsonwebtoken": {
+    "current": "9.0.2",
+    "wanted": "9.0.2",
+    "latest": "9.0.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/jsonwebtoken"
+  },
+  "lint-staged": {
+    "current": "16.2.7",
+    "wanted": "16.4.0",
+    "latest": "17.0.5",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/lint-staged"
+  },
+  "mailersend": {
+    "current": "2.6.0",
+    "wanted": "2.8.0",
+    "latest": "3.0.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/mailersend"
+  },
+  "mjml": {
+    "current": "5.0.0-alpha.6",
+    "wanted": "5.2.2",
+    "latest": "5.2.2",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/mjml"
+  },
+  "mongoose": {
+    "current": "8.23.1",
+    "wanted": "8.24.0",
+    "latest": "9.6.2",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/mongoose"
+  },
+  "multer": {
+    "current": "1.4.5-lts.2",
+    "wanted": "1.4.5-lts.2",
+    "latest": "2.1.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/multer"
+  },
+  "nodemailer": {
+    "current": "8.0.5",
+    "wanted": "8.0.5",
+    "latest": "8.0.7",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/nodemailer"
+  },
+  "nodemon": {
+    "current": "3.1.11",
+    "wanted": "3.1.14",
+    "latest": "3.1.14",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/nodemon"
+  },
+  "ping": {
+    "current": "0.4.4",
+    "wanted": "0.4.4",
+    "latest": "1.0.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/ping"
+  },
+  "prettier": {
+    "current": "3.6.2",
+    "wanted": "3.8.3",
+    "latest": "3.8.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/prettier"
+  },
+  "sharp": {
+    "current": "0.33.5",
+    "wanted": "0.33.5",
+    "latest": "0.34.5",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/sharp"
+  },
+  "ssl-checker": {
+    "current": "2.0.10",
+    "wanted": "2.0.10",
+    "latest": "3.0.1",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/ssl-checker"
+  },
+  "ts-jest": {
+    "current": "29.4.6",
+    "wanted": "29.4.10",
+    "latest": "29.4.10",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/ts-jest"
+  },
+  "tsc-alias": {
+    "current": "1.8.16",
+    "wanted": "1.8.16",
+    "latest": "1.8.17",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/tsc-alias"
+  },
+  "tsx": {
+    "current": "4.20.5",
+    "wanted": "4.20.5",
+    "latest": "4.22.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/tsx"
+  },
+  "typescript": {
+    "current": "5.9.2",
+    "wanted": "5.9.2",
+    "latest": "6.0.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/typescript"
+  },
+  "typescript-eslint": {
+    "current": "8.56.1",
+    "wanted": "8.59.4",
+    "latest": "8.59.4",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/typescript-eslint"
+  },
+  "winston": {
+    "current": "3.18.3",
+    "wanted": "3.19.0",
+    "latest": "3.19.0",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/winston"
+  },
+  "zod": {
+    "current": "4.3.6",
+    "wanted": "4.4.3",
+    "latest": "4.4.3",
+    "dependent": "server",
+    "location": "/Users/antoniorodriguez/GITHUB-RASTY/Checkmate/server/node_modules/zod"
+  }
+}
