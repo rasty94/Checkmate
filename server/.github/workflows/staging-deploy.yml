@@ -46,18 +46,5 @@ jobs:
       - name: Push Redis Docker image
         run: docker push ghcr.io/${{ github.repository_owner }}/checkmate-redis:staging
 
-  deploy-to-staging:
-    needs: docker-build-and-push
-    runs-on: ubuntu-latest
-    steps:
-      - name: SSH into server and restart container using Docker Compose
-        uses: appleboy/ssh-action@v1.0.0
-        with:
-          host: ${{ secrets.STAGING_SERVER_HOST }}
-          username: ${{ secrets.STAGING_SERVER_USER }}
-          key: ${{ secrets.STAGING_SERVER_SSH_KEY }}
-          script: |
-            cd checkmate/server/docker/staging
-            docker compose down
-            docker compose pull
-            docker compose up -d
+  # deploy-to-staging job removed: deployment steps disabled.
+  # CI will only build and push images; deployments should be performed separately.
